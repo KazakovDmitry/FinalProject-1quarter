@@ -8,7 +8,7 @@
     Console.Write($"{array[array.Length - 1]}]");
 }
 
-string FindElementLess3Char (string [] array)
+string [] FindElementLess3Char (string [] array)
 {
     string temp = String.Empty;
     for (int i = 0; i < array.Length - 1; i++)
@@ -18,11 +18,13 @@ string FindElementLess3Char (string [] array)
     }
     temp = temp + array[array.Length - 1];
 
-    return temp;
+    string [] rezultArray = temp.Split(" ");
+
+    return rezultArray;
 }
+
 string [] startArray = {"hello", "2", "world", ":-)"};
 PrintArray(startArray);
-
-string rezult = FindElementLess3Char(startArray);
+string [] rezultArray = FindElementLess3Char(startArray);
 Console.Write(" -> ");
-Console.Write(rezult);
+PrintArray(rezultArray);
