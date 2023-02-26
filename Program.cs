@@ -24,4 +24,5 @@ string [] startArray = {"hello", "2", "world", ":-)"};
 PrintArray(startArray);
 
 string rezult = FindElementLess3Char(startArray);
+Console.Write(" -> ");
 Console.Write(rezult);
